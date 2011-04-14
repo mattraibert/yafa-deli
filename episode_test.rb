@@ -8,7 +8,7 @@ class EpisodeTest < Test::Unit::TestCase
   
   def test_parse_a_one_hour_episode
     episodeData = Hpricot.parse(one_hour_episode_html)
-    
+
     episode = Episode.new episodeData
 
     assert_equal "The Jam Session", episode.name
