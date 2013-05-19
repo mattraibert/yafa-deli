@@ -1,1815 +1,1761 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
-<html> 
-<head> 
-  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
-  <meta http-equiv="Content-Style-Type" content="text/css"> 
-  <meta http-equiv="Content-Script-Type" content="text/javascript"> 
-  <title>WZBC Audio Archive</title> 
-  <script type="text/javascript"> 
-    </script> 
-  <style type="text/css" media="all"> 
-    html, body, div, span, object, iframe, h1, h2, h3, h4, h5, 
-    h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, 
-    del, dfn, em, img, ins, kbd, q, samp, strong, sub, sup, tt, var, 
-    dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
-    caption, tbody, tfoot, thead, tr, th, td {  /* default resets */
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    font-size: 1em;
-    }
-    body {/* the HTML body */
-    font-size: 76%; 
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    line-height: 1.28em;
-    color: black; 
-    background: white;
-    padding: 2em;
-    }
-    h1 {
-    font-size: 150%;
-    }
-    #archivelinks {
-    border-collapse: collapse;
-    margin-bottom: 2em;
-    }
-    #archivelinks td {
-    vertical-align: top;
-    border-top: 1px solid #999;
-    padding: 0.2em 1em 0.2em 0;
-    }
-    #archivelinks td.space {
-    height: 2em;
-    }
-    #archivelinks td.date {
-    font-size: 125%;
-    margin-top: 1em;
-    padding: 0.5em 1em 1em 0;
-    }
-    #archivelinks td.ntb {
-    border-top: none;
-    }
-    #archivelinks td.c1 {
-    width: 2em;
-    }
-    #archivelinks td.c2 {
-    text-align: right;
-    padding-right: 0.5em;
-    }
-    a {
-    color: #400;
-    text-decoration: none;
-    }
-    a:hover {
-    color: #900;
-    text-decoration: underline;
-    }
-    p.help {
-    font-size: 85%;
-    color: #777;
-    margin-top: 0.75em;
-    width: 60em;
-    }
-    p.helplink {
-    margin: 1em 0 3em;
-    }
-    </style> 
-</head> 
-<body> 
-<h1>WZBC Audio Archive</h1> 
-<p class="helplink"><a href="#help">HELP</a></p> 
-<table id="archivelinks" cellspacing="1"> 
-  <tr> 
-    <td colspan="4" class="date">Wednesday April 13th 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-13-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Fats Superhead and the 68 Year Old Man</b> with Saul<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18754">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-13-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>News at Dawn</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">7:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-13-07-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">8:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-13-08-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Stormy Wednesday </b> with Evan<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18755">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-13-09-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-13-10-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>The Brian and Mook Show with Emmy and Tom</b> with Emmy<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18756">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-13-11-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-13-12-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Democracy Now!</b><br><a href="http://democracynow.org">http://democracynow.org</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-13-13-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Love and Mathematics </b> with Pete<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18757">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-13-14-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-13-15-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>heygirlhey</b> with Paul<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18758">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">4:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-13-16-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Annihilate This Week</b> with Kerns<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18759">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">5:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-13-17-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Psychotic Reactions</b> with PIP<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18760">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-13-18-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>The Space-Mind Continuum</b> with Matt<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18761">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-13-19-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>HOARDERS</b> with Alex G<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18762">View playlist</a><br><a href="http://www.hoardersanonymous.org/">http://www.hoardersanonymous.org/</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-13-20-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Tuesday April 12th 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-12-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Green</b> with Selsyn<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18753">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-12-01-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>The Selsyn Collection </b><br><a href="http://selsyn.net/playlist">http://selsyn.net/playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-12-02-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-12-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-12-07-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Sirens on the Rocks</b> with Jake<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18747">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-12-08-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-12-09-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-12-10-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Breakfast at the Double R</b> with Ethan<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18748">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-12-11-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-12-12-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Democracy Now!</b><br><a href="http://democracynow.org">http://democracynow.org</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-12-13-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Songs That Won't Save Your Relationship </b> with DJ Khil<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18749">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-12-14-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-12-15-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>NOFUTURE</b> with mikolhede<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18750">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-12-16-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">5:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-12-17-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Gulls Window Circus</b> with Carl Thien<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18751">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">6:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-12-18-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-12-19-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Abstract Terrain</b> with Patrick<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18752">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-12-20-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-12-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-12-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Fats Superhead and the 68 Year Old Man</b> with Saul<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18754">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-12-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Monday April 11th 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-11-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>The High Voltage Circumcision Show</b> with Deftly-D<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18738">View playlist</a><br><a href="http://www.myspace.com/highvoltagecircumcision">http://www.myspace.com/highvoltagecircumcision</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-11-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-11-07-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Laughing on the Bus</b> with Molly<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18739">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-11-08-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-11-09-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-11-10-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>One Step Forward, Two Steps Back</b> with Devon<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18740">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-11-11-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-11-12-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Democracy Now!</b><br><a href="http://democracynow.org">http://democracynow.org</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-11-13-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>The Church of Chewbacca</b> with Chris<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18741">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-11-14-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-11-15-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Frequently and in Strange Places</b> with Thomas<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18742">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-11-16-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">5:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-11-17-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Folk it! </b> with Elizabeth<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18743">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-11-18-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Organic Thought</b> with Claudia<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18744">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-11-19-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>20khz</b> with Nate<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18745">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-11-20-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-11-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-11-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Green</b> with Selsyn<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18753">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-11-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Sunday April 10th 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-10-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Ghost Town</b> with jb<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18733">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-10-01-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="5"><b>beyond the qe2</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-02-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">3:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-03-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-04-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">5:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-05-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-10-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="4"><b>Truth and Justice Radio</b> with Stan Robinson, Steve Cornie, and Martin Voelker, much helped by Jerry Sobieraj, Jeff Manzelli, and T.W.I.P. hosts Salma Abu Ayyash, Despina Moutsouris, Ken Barney, and John Roberts; IN MEMORIAM: Sherif Fam (1936-2010)<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18732">View playlist</a><br><a href="http://truthandjusticeradio.org">http://truthandjusticeradio.org</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">7:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-07-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-08-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-09-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-10-10-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="4"><b>Sunday Morning Country</b> with Cousin Kate<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18709">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-11-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">12:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-12-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">1:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-13-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">2:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-10-14-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Juvert Jams</b> with DJ i <br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18734">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">3:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-15-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">4:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-10-16-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Martinis on the Moon</b> with Jessica<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18735">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">5:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-17-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-10-18-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Oscillator Drift</b> with Andrew<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18736">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">7:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-19-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">8:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-10-20-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>The Industrial Factory</b> with Brian L.<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18737">View playlist</a><br><a href="http://www.myspace.com/industrialfactory">http://www.myspace.com/industrialfactory</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-10-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>The High Voltage Circumcision Show</b> with Deftly-D<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18738">View playlist</a><br><a href="http://www.myspace.com/highvoltagecircumcision">http://www.myspace.com/highvoltagecircumcision</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-10-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Saturday April 9th 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-09-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Wintery Mix</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-09-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-09-07-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Lucid Sounds</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-09-08-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-09-09-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-09-10-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>EXPANDING AWARENESS</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">11:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-09-11-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Sounds of Dissent</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">12:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-09-12-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-09-13-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>BC Sports Saturday</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-09-14-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-09-15-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="4"><b>Raggamuffin International</b> with Robin<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18731">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-09-16-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">5:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-09-17-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">6:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-09-18-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-09-19-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Caribbean Forum</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-09-20-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-09-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-09-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Ghost Town</b> with jb<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18733">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-09-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Friday April 8th 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>TranceContinental</b> with Blake<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18721">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-01-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>157</b> with Blake<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18722">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-08-02-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-03-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Irregular Show</b> with Blake<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18723">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-08-04-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-07-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Melody du Jour</b> with Meaghan<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18724">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-08-08-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">9:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-09-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Kick Out the James!</b> with James<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18725">View playlist</a><br><a href="http://artguyology.wordpress.com/">http://artguyology.wordpress.com/</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">10:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-08-10-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-08-11-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-12-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Democracy Now!</b><br><a href="http://democracynow.org">http://democracynow.org</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-13-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Prold Hours</b> with Davtap<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18726">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-08-14-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-15-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Stately Plump Buck Mulligan</b> with Kevin<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18727">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-08-16-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">5:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-17-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>How to: </b> with Zazie<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18728">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-18-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Connecting the Notes</b> with Matthew Ray<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18729">View playlist</a><br><a href="http://connectingthenotes.com">http://connectingthenotes.com</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-19-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Off the Cuff</b> with Chris<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18730">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-08-20-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-08-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-08-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Wintery Mix</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-08-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Thursday April 7th 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-07-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Jukebox Heart </b> with Paul Collegio<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18713">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-07-01-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Peripheral Noise </b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-07-02-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-07-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-07-07-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Boston's Garage</b> with Nick<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18714">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-07-08-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-07-09-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-07-10-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Secret Service</b> with Julian<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18715">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-07-11-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-07-12-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Democracy Now!</b><br><a href="http://democracynow.org">http://democracynow.org</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-07-13-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Le Doan</b> with erin<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18716">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">2:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-07-14-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>The Echoz Location </b> with Dj Lú<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18717">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-07-15-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>3 Kinds of Yes</b> with Meaghan<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18718">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-07-16-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">5:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-07-17-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Flyweight</b> with Rav<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18719">View playlist</a><br><a href="http://www.facebook.com/wzbc.flyweight">http://www.facebook.com/wzbc.flyweight</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">6:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-07-18-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-07-19-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Rare Frequency</b> with susanna<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18720">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-07-20-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-07-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-07-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>TranceContinental</b> with Blake<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18721">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-07-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Wednesday April 6th 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-06-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Fats Superhead and the 68 Year Old Man</b> with Saul<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18706">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-06-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>News at Dawn</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">7:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-06-07-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">8:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-06-08-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Stormy Wednesday </b> with Pat<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18707">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-06-09-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-06-10-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>The Brian and Mook Show with Emmy and Tom</b> with Emmy<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18708">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-06-11-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-06-12-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Democracy Now!</b><br><a href="http://democracynow.org">http://democracynow.org</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-06-13-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Love and Mathematics </b> with Pete<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18710">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-06-14-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-06-15-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>heygirlhey</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">4:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-06-16-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Annihilate This Week</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">5:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-06-17-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Psychotic Reactions</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-06-18-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>The Space-Mind Continuum</b> with Matt<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18711">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-06-19-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>HOARDERS</b> with Alex G<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18712">View playlist</a><br><a href="http://www.hoardersanonymous.org/">http://www.hoardersanonymous.org/</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-06-20-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-06-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-06-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Jukebox Heart </b> with Paul Collegio<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18713">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Tuesday April 5th 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-05-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Green</b> with Mathwin<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18697">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-05-01-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>The Selsyn Collection </b> with Selsyn<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18702">View playlist</a><br><a href="http://selsyn.net/playlist">http://selsyn.net/playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-05-02-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-05-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-05-07-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Sirens on the Rocks</b> with Selsyn<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18699">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-05-08-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-05-09-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-05-10-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Breakfast at the Double R</b> with Ethan<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18700">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-05-11-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-05-12-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Democracy Now!</b><br><a href="http://democracynow.org">http://democracynow.org</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-05-13-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Songs That Won't Save Your Relationship </b> with DJ Khil<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18701">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-05-14-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-05-15-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>NOFUTURE</b> with mikolhede<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18703">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-05-16-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">5:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-05-17-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Gulls Window Circus</b> with Carl Thien<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18704">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">6:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-05-18-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-05-19-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Abstract Terrain</b> with Patrick<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18705">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-05-20-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-05-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-05-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Fats Superhead and the 68 Year Old Man</b> with Saul<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18706">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-05-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Monday April 4th 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-04-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>The High Voltage Circumcision Show</b> with Deftly-D<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18689">View playlist</a><br><a href="http://www.myspace.com/highvoltagecircumcision">http://www.myspace.com/highvoltagecircumcision</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-04-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-04-07-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Beat Waves</b> with Katie!<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18690">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-04-08-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-04-09-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-04-10-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>One Step Forward, Two Steps Back</b> with Devon<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18691">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-04-11-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-04-12-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Democracy Now!</b><br><a href="http://democracynow.org">http://democracynow.org</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-04-13-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>The Church of Chewbacca</b> with Chris<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18692">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-04-14-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-04-15-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Frequently and in Strange Places</b> with Thomas<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18693">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-04-16-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">5:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-04-17-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Folk it! </b> with Elizabeth<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18694">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-04-18-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Organic Thought</b> with Claudia<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18695">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-04-19-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>20khz</b> with Nate<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18696">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-04-20-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-04-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-04-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Green</b> with Mathwin<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18697">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-04-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Sunday April 3rd 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-03-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Ghost Town</b> with jb<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18684">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-03-01-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="5"><b>beyond the qe2</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-02-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">3:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-03-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-04-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">5:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-05-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-03-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="4"><b>Truth and Justice Radio</b> with Stan Robinson, Steve Cornie, and Martin Voelker, much helped by Jerry Sobieraj, Jeff Manzelli, and T.W.I.P. hosts Salma Abu Ayyash, Despina Moutsouris, Ken Barney, and John Roberts; IN MEMORIAM: Sherif Fam (1936-2010)<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18681">View playlist</a><br><a href="http://truthandjusticeradio.org">http://truthandjusticeradio.org</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">7:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-07-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-08-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-09-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-03-10-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="4"><b>Sunday Morning Country</b> with Cousin Kate<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18683">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-11-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">12:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-12-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">1:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-13-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">2:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-03-14-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Juvert Jams</b> with dj blaze<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18685">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">3:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-15-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">4:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-03-16-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Universal Sounds Incorporated</b> with jb<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18686">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">5:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-17-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-03-18-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>The Shadowbox</b> with Brian L.<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18687">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">7:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-19-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">8:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-03-20-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>The Industrial Factory</b> with Kellie<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18688">View playlist</a><br><a href="http://www.myspace.com/industrialfactory">http://www.myspace.com/industrialfactory</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-03-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>The High Voltage Circumcision Show</b> with Deftly-D<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18689">View playlist</a><br><a href="http://www.myspace.com/highvoltagecircumcision">http://www.myspace.com/highvoltagecircumcision</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-03-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Saturday April 2nd 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-02-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Wintery Mix</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-02-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-02-07-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Lucid Sounds</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-02-08-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-02-09-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-02-10-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>EXPANDING AWARENESS</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">11:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-02-11-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Sounds of Dissent</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">12:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-02-12-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-02-13-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>BC Sports Saturday</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-02-14-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-02-15-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="4"><b>Raggamuffin International</b> with Robin<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18682">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-02-16-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">5:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-02-17-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">6:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-02-18-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-02-19-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Caribbean Forum</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-02-20-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-02-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-02-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Ghost Town</b> with jb<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18684">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-02-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Friday April 1st 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>TranceContinental</b> with Tom Hollo<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18670">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-01-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>POKEMON CHAT with Randy</b> with Blake<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18671">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-01-02-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-03-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Irregular Show</b> with Blake<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18672">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-01-04-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-07-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Melody du Jour</b> with Alexandra<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18674">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-01-08-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">9:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-09-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Kick Out the James!</b> with James<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18675">View playlist</a><br><a href="http://artguyology.wordpress.com/">http://artguyology.wordpress.com/</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">10:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-01-10-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-01-11-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-12-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Democracy Now!</b><br><a href="http://democracynow.org">http://democracynow.org</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-13-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Prold Hours</b> with Davtap<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18676">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-01-14-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-15-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Stately Plump Buck Mulligan</b> with Neil<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18677">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-01-16-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">5:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-17-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>How to: </b> with Zazie<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18678">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-18-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Connecting the Notes</b> with Matthew Ray<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18679">View playlist</a><br><a href="http://connectingthenotes.com">http://connectingthenotes.com</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-19-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Off the Cuff</b> with George<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18680">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-01-20-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-01-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-04-01-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Wintery Mix</b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-04-01-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Thursday March 31st 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-31-00-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Jukebox Heart </b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-31-01-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Peripheral Noise </b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">2:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-03-31-02-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">6:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-31-06-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-31-07-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Boston's Garage</b> with Nick<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18663">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-03-31-08-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-03-31-09-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00am</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-31-10-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Secret Service</b> with Nick<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18664">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00am</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-03-31-11-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">12:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-31-12-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Democracy Now!</b><br><a href="http://democracynow.org">http://democracynow.org</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">1:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-31-13-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>Le Doan</b> with erin<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18666">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">2:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-31-14-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="1"><b>The Echoz Location </b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">3:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-31-15-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>3 Kinds of Yes</b> with Meaghan<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18667">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">4:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-03-31-16-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">5:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-31-17-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Flyweight</b> with Rav<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18668">View playlist</a><br><a href="http://www.facebook.com/wzbc.flyweight">http://www.facebook.com/wzbc.flyweight</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">6:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-03-31-18-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">7:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-31-19-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="3"><b>Rare Frequency</b> with Douglas and Paul<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18669">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">8:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-03-31-20-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-03-31-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-31-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>TranceContinental</b> with Tom Hollo<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=18670">View playlist</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-03-31-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-  <tr> 
-    <td colspan="4" class="date">Wednesday March 30th 2011</td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">8:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-30-20-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>HOARDERS</b><br><a href="http://www.hoardersanonymous.org/">http://www.hoardersanonymous.org/</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">9:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-03-30-21-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ">10:00pm</td> 
-    <td class="c3 "> <a href="wzbc-2011-03-30-22-00.m3u">Listen</a></td> 
-    <td class="c3" rowspan="2"><b>Jukebox Heart </b></td> 
-  </tr> 
-  <tr> 
-    <td class="c1 ntb"></td> 
-    <td class="c2 ntb">11:00pm</td> 
-    <td class="c3 ntb"> <a href="wzbc-2011-03-30-23-00.m3u">Listen</a></td> 
-  </tr> 
-  <tr> 
-    <td class="space ntb"></td> 
-    <td colspan="3" class="space "></td> 
-  </tr> 
-</table> 
- 
-<p><a name="help">HELP</a></p> 
-<p class="help">The "listen" links are so-called 'M3U playlist' files (small text files containing
-info about the audio) that programs like 
-iTunes, QuickTime Player, WinAmp and Window Media Player can open. If your computer 
-doesn't play the archive automatically when you click the link you may be able to download
-the file (if it didn't already) and open it in one of those player programs.</p> 
-<p class="help">Happily, it's normally possible to configure
-your computer so that the links play automatically. But, sadly, I don't have any advice on 
-how to do it.</p> 
-</body> 
-</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <title>WZBC Audio Archive</title>
+  <script type="text/javascript">
+  </script>
+</head>
+<body>
+<h1>WZBC Audio Archive</h1>
+<p class="helplink"><a href="#help">HELP</a></p>
+<table id="archivelinks" cellspacing="1">
+<tr>
+  <td colspan="4" class="date">Saturday January 5th 2013</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-05-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Wintery Mix</b> with Dick Winter<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23118">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-05-01-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Da Beat Suite</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-05-02-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-05-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-05-07-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="3"><b>Lucid Sounds</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-05-08-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-05-09-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-05-10-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>EXPANDING AWARENESS</b></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Friday January 4th 2013</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-04-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Jukebox Heart </b> with Paul Collegio<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23108">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-04-01-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>157</b> with Blake<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23109">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-04-02-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-04-03-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Irregular Show</b> with Blake<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23110">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-04-04-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-04-05-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-04-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Spoiler Alert Radio</b> with DJ Madame B<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23111">View playlist</a><br><a href="http://www.spoileralertradio.com">http://www.spoileralertradio.com</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-04-07-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Transworld Airwaves</b> with DJ Madame B<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23112">View playlist</a><br><a href="http://www.mergingarts.org">http://www.mergingarts.org</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-04-08-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">9:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-04-09-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="3"><b>Kick Out the James!</b> with James<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23113">View playlist</a><br><a href="http://www.artguy.com/radio/">http://www.artguy.com/radio/</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">10:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-04-10-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-04-11-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-04-13-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Deli Pancakes</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-04-14-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-04-15-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Love and Mathematics</b> with Pete<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23115">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-04-16-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-04-17-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Mass Ave and Beyond</b> with Chris<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23116">View playlist</a><br><a href="http://BostonHassle.com">http://BostonHassle.com</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">6:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-04-18-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-04-19-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="3"><b>Off the Cuff</b> with Chris H.<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23117">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-04-20-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-04-21-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-04-22-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Wintery Mix</b> with Dick Winter<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23118">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-04-23-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Thursday January 3rd 2013</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-03-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Witness to the fall of a kamikaze valentine </b><br><a href="http://zen?gangstas.w?ordpress.c?om">http://zen?gangstas.w?ordpress.c?om</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-03-01-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Unspeak the Truth</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-03-02-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-03-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Freshly Brewed</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">7:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-03-07-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">8:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-03-08-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Cream Soda Burps</b> with Charlie Sedaka<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23102">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-03-09-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-03-10-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>GREAT plain music</b> with Matt<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23101">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-03-11-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-03-13-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Sippy Cup Everything</b> with Sippy Cup Everything<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23103">View playlist</a><br><a href="http://sippycupeverything.com">http://sippycupeverything.com</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-03-14-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-03-15-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>DUplex Mystery Jazz Hour</b> with Steve Provizer<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23104">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-03-16-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-03-17-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Connecting The Notes</b> with Matthew Ray<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23105">View playlist</a><br><a href="http://www.connectingthenotes.com">http://www.connectingthenotes.com</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-03-18-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>ThinkUp</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-03-19-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="3"><b>Rare Frequency</b> with susanna<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23107">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-03-20-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-03-21-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-03-22-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Jukebox Heart </b> with Paul Collegio<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23108">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-03-23-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Wednesday January 2nd 2013</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-02-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Fat's Superhead &amp; the 68 Year Old Man </b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-02-01-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">2:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-02-02-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-02-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>News at Dawn</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">7:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-02-07-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">8:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-02-08-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Scribbler's Eight</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">9:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-02-09-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="7"><b>A Wintery Mix</b> with Chris<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23097">View playlist</a><br><a href="http://bostonhassle.com">http://bostonhassle.com</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">10:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-02-10-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-02-11-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">1:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-02-13-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-02-14-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">3:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-02-15-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-02-16-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-02-17-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Psychotic Reactions</b> with PIP<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23098">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-02-18-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>The Space-Mind Continuum</b> with Matt<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23099">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-02-19-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="5"><b>A Wintery Mix</b> with Chris<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23097">View playlist</a><br><a href="http://bostonhassle.com">http://bostonhassle.com</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-02-20-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-02-21-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">10:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-02-22-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-02-23-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Tuesday January 1st 2013</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Green</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-01-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>The Selsyn Collection </b><br><a href="http://selsyn.net/playlist">http://selsyn.net/playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-01-02-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-07-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Cochlear Candy</b><br><a href="http://cochlearcandy.blogspot.com">http://cochlearcandy.blogspot.com</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-01-08-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">9:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-09-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Flipping the Labels</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">10:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-01-10-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">11:00am</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-11-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Crying on the Inside</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-13-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Tweenage Angst</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">2:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-14-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Serves You Right</b> with Charlie Sedaka<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23095">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">3:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-01-15-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">4:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-16-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>All I Want for My Birthday</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-17-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Gulls Window Circus </b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">6:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-01-18-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-19-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Abstract Terrain</b> with Patrick<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23096">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-01-20-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">9:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-21-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>A Few Good Bros</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">10:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2013-01-01-22-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">11:00pm</td>
+  <td class="c3 "> <a href="wzbc-2013-01-01-23-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Fat's Superhead &amp; the 68 Year Old Man </b></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Monday December 31st 2012</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-31-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Flyweight</b> with Rav<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23091">View playlist</a><br><a href="http://www.facebook.com/wzbc.flyweight">http://www.facebook.com/wzbc.flyweight</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-31-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Melody Du Jour</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">7:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-31-07-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">8:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-31-08-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Kant Stop the Music</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">9:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-31-09-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Soundsyrup</b> with Bradley Jay<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23092">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">10:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-31-10-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">11:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-31-11-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Fight Club (aka. THE DARKNET)</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-31-13-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Sirens on the Rocks</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-31-14-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-31-15-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>It's New Years Eve!!</b> with Natalie<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23093">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-31-16-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-31-17-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Talkies: Soul Brothers</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-31-18-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Photon Pitch</b> with Wes Hazard<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23094">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-31-19-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="3"><b>The High Voltage Circumcision Show</b><br><a href="http://www.facebook.com/pages/Return-of-the-HIGH-VOLTAGE-CIRCUMCISION-SHOW-NCP-903FM-WZBC-Newton-MA/145058389286">http://www.facebook.com/pages/Return-of-the-HIGH-VOLTAGE-CIRCUMCISION-SHOW-NCP-903FM-WZBC-Newton-MA/145058389286</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-31-20-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-31-21-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-31-22-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Green</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-31-23-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Sunday December 30th 2012</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Ghost Town</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-01-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">2:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-02-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-03-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">4:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-04-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-05-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="4"><b>Truth and Justice Radio</b> with Stan Robinson and Steve Cornie; associates Salma Abu Ayyash, Despina Moutsouris, John Roberts, Chadi Salamoun, and Samer Jaber; IN MEMORIAM: Sherif Fam (1936-2010); valuable offsite help from Jerry Sobieraj, Kevin Heaton, and many others<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23086">View playlist</a><br><a href="http://truthandjusticeradio.org">http://truthandjusticeradio.org</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">7:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-30-07-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-30-08-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-30-09-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-10-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="4"><b>Sunday Morning Country</b> with Cousin Kate<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23087">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-30-11-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">12:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-30-12-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">1:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-30-13-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">2:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-14-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Juvert Jams</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">3:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-30-15-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">4:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-16-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Martinis on the Moon</b> with Jessica<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23088">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">5:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-30-17-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-18-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Oscillator Drift</b> with Andrew<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23089">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">7:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-30-19-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">8:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-20-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>The Industrial Factory</b> with Kellie<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23090">View playlist</a><br><a href="http://www.myspace.com/industrialfactory">http://www.myspace.com/industrialfactory</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-30-21-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-30-22-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Flyweight</b> with Rav<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23091">View playlist</a><br><a href="http://www.facebook.com/wzbc.flyweight">http://www.facebook.com/wzbc.flyweight</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-30-23-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Saturday December 29th 2012</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-29-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Wintery Mix</b> with Dick Winter<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23084">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-29-01-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Da Beat Suite</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-29-02-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-29-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-29-07-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="3"><b>Lucid Sounds</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-29-08-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-29-09-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-29-10-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>EXPANDING AWARENESS</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">11:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-29-11-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Sounds of Dissent</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">12:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-29-12-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-29-13-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>BC Sports Saturday</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-29-14-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-29-15-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="4"><b>Raggamuffin International</b> with Robin<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23085">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-29-16-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">5:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-29-17-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">6:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-29-18-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-29-19-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="3"><b>Caribbean Forum</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-29-20-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-29-21-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-29-22-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Ghost Town</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-29-23-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Friday December 28th 2012</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-28-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Witness to the fall of a kamikaze valentine </b> with A: zenGestaltaoist<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23072">View playlist</a><br><a href="http://zen?gangstas.w?ordpress.c?om">http://zen?gangstas.w?ordpress.c?om</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-28-01-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>157</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-28-02-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-28-03-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Irregular Show</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-28-04-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-28-05-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-28-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Spoiler Alert Radio</b> with DJ Madame B<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23078">View playlist</a><br><a href="http://www.spoileralertradio.com">http://www.spoileralertradio.com</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-28-07-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Transworld Airwaves</b> with DJ Madame B<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23079">View playlist</a><br><a href="http://www.mergingarts.org">http://www.mergingarts.org</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-28-08-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">9:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-28-09-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="3"><b>Kick Out the James!</b> with James<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23080">View playlist</a><br><a href="http://www.artguy.com/radio/">http://www.artguy.com/radio/</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">10:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-28-10-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-28-11-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-28-13-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Deli Pancakes</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-28-14-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-28-15-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Love and Mathematics</b> with Pete<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23081">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-28-16-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-28-17-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Mass Ave and Beyond</b> with Rav<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23082">View playlist</a><br><a href="http://BostonHassle.com">http://BostonHassle.com</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">6:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-28-18-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-28-19-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="3"><b>Off the Cuff</b> with George<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23083">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-28-20-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-28-21-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-28-22-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Wintery Mix</b> with Dick Winter<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23084">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-28-23-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Thursday December 27th 2012</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-27-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Witness to the fall of a kamikaze valentine </b><br><a href="http://zen?gangstas.w?ordpress.c?om">http://zen?gangstas.w?ordpress.c?om</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-27-01-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Unspeak the Truth</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-27-02-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-27-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Freshly Brewed</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">7:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-27-07-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">8:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-27-08-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Cream Soda Burps</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-27-09-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-27-10-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Shrimply Fabulous</b> with court<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23073">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-27-11-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-27-13-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Sippy Cup Everything</b> with Sippy Cup Everything<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23074">View playlist</a><br><a href="http://sippycupeverything.com">http://sippycupeverything.com</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-27-14-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-27-15-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>I Went to Disneyland</b> with Steve Provizer<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23075">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-27-16-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-27-17-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Connecting The Notes</b> with Matthew Ray<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23076">View playlist</a><br><a href="http://www.connectingthenotes.com">http://www.connectingthenotes.com</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-27-18-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>ThinkUp</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-27-19-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="3"><b>Rare Frequency</b> with susanna<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23077">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-27-20-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-27-21-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-27-22-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Jukebox Heart </b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">11:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-27-23-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Witness to the fall of a kamikaze valentine </b> with A: zenGestaltaoist<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23072">View playlist</a><br><a href="http://zen?gangstas.w?ordpress.c?om">http://zen?gangstas.w?ordpress.c?om</a></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Wednesday December 26th 2012</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Fat's Superhead &amp; the 68 Year Old Man </b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-01-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">2:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-02-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>News at Dawn</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">7:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-26-07-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">8:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-08-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Scribbler's Eight</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-26-09-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-10-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Ramshackle Radio</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">11:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-11-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Recording Live from Somewhere</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-13-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Orange You Glad</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-26-14-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-15-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>NUCLEAR-A-GO-GO</b> with PIP<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23069">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-26-16-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-17-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Psychotic Reactions</b> with PIP<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23070">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-18-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>The Space-Mind Continuum</b> with Matt<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23071">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-19-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Sounds in the Key of Dee</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-26-20-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">9:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-21-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>The Sights and Sounds of NASCAR</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">10:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-26-22-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">11:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-26-23-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Witness to the fall of a kamikaze valentine </b><br><a href="http://zen?gangstas.w?ordpress.c?om">http://zen?gangstas.w?ordpress.c?om</a></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Tuesday December 25th 2012</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-25-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Green</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-25-01-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>The Selsyn Collection </b><br><a href="http://selsyn.net/playlist">http://selsyn.net/playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-25-02-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-25-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-25-07-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Cochlear Candy</b><br><a href="http://cochlearcandy.blogspot.com">http://cochlearcandy.blogspot.com</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-25-08-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">9:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-25-09-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Pre-Jesus Show</b> with James<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23067">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">10:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-25-10-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">11:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-25-11-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Crying on the Inside</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-25-13-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Tweenage Angst</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-25-14-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-25-15-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>All I Want for My Birthday</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-25-16-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-25-17-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Gulls Window Circus </b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">6:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-25-18-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-25-19-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Sounds in the Key of Dee</b> with Jeff<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23068">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-25-20-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">9:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-25-21-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>A Few Good Bros</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">10:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-25-22-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">11:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-25-23-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Fat's Superhead &amp; the 68 Year Old Man </b></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Monday December 24th 2012</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-24-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Flyweight</b> with Rav<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23063">View playlist</a><br><a href="http://www.facebook.com/wzbc.flyweight">http://www.facebook.com/wzbc.flyweight</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-24-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Melody Du Jour</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">7:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-24-07-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">8:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-24-08-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Kant Stop the Music</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-24-09-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-24-10-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Say No More (Mon Amour)</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">11:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-24-11-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Fight Club (aka. THE DARKNET)</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-24-13-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Sirens on the Rocks</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-24-14-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-24-15-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Winter Break</b> with Natalie<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23064">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-24-16-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-24-17-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Talkies: Soul Brothers</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-24-18-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Photon Pitch</b> with Wes Hazard<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23065">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-24-19-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="3"><b>The High Voltage Circumcision Show</b> with Deftly-D<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23066">View playlist</a><br><a href="http://www.facebook.com/pages/Return-of-the-HIGH-VOLTAGE-CIRCUMCISION-SHOW-NCP-903FM-WZBC-Newton-MA/145058389286">http://www.facebook.com/pages/Return-of-the-HIGH-VOLTAGE-CIRCUMCISION-SHOW-NCP-903FM-WZBC-Newton-MA/145058389286</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-24-20-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-24-21-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-24-22-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Green</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-24-23-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Sunday December 23rd 2012</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">12:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-00-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>Ghost Town</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-01-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">2:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-02-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-03-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">4:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-04-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">5:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-05-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-06-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="4"><b>Truth and Justice Radio</b> with Stan Robinson and Steve Cornie; associates Salma Abu Ayyash, Despina Moutsouris, John Roberts, Chadi Salamoun, and Samer Jaber; IN MEMORIAM: Sherif Fam (1936-2010); valuable offsite help from Jerry Sobieraj, Kevin Heaton, and many others<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23060">View playlist</a><br><a href="http://truthandjusticeradio.org">http://truthandjusticeradio.org</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">7:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-23-07-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-23-08-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-23-09-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-10-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="4"><b>Sunday Morning Country</b> with Cousin Kate<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23016">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00am</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-23-11-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">12:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-23-12-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">1:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-23-13-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">2:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-14-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Juvert Jams</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">3:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-23-15-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">4:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-16-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Martinis on the Moon</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">5:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-23-17-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">6:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-18-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>The Shadowbox</b> with Linda<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23061">View playlist</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">7:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-23-19-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">8:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-20-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>The Industrial Factory</b> with Kellie<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23062">View playlist</a><br><a href="http://www.myspace.com/industrialfactory">http://www.myspace.com/industrialfactory</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-23-21-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-23-22-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Flyweight</b> with Rav<br><a href="http://spinitron.com/public/index.php?station=wzbc&amp;plid=23063">View playlist</a><br><a href="http://www.facebook.com/wzbc.flyweight">http://www.facebook.com/wzbc.flyweight</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-23-23-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+<tr>
+  <td colspan="4" class="date">Saturday December 22nd 2012</td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-22-10-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="1"><b>EXPANDING AWARENESS</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">11:00am</td>
+  <td class="c3 "> <a href="wzbc-2012-12-22-11-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Sounds of Dissent</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">12:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-22-12-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">1:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-22-13-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>BC Sports Saturday</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">2:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-22-14-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">3:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-22-15-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="4"><b>Raggamuffin International</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">4:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-22-16-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">5:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-22-17-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">6:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-22-18-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">7:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-22-19-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="3"><b>Caribbean Forum</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">8:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-22-20-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">9:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-22-21-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ">10:00pm</td>
+  <td class="c3 "> <a href="wzbc-2012-12-22-22-00.m3u">Listen</a></td>
+  <td class="c3" rowspan="2"><b>Ghost Town</b></td>
+</tr>
+<tr>
+  <td class="c1 ntb"></td>
+  <td class="c2 ntb">11:00pm</td>
+  <td class="c3 ntb"> <a href="wzbc-2012-12-22-23-00.m3u">Listen</a></td>
+</tr>
+<tr>
+  <td class="space ntb"></td>
+  <td colspan="3" class="space "></td>
+</tr>
+</table>
 
+<p><a name="help">HELP</a></p>
+<p class="help">The "listen" links are so-called 'M3U playlist' files (small text files containing
+  info about the audio) that programs like
+  iTunes, QuickTime Player, WinAmp and Window Media Player can open. If your computer
+  doesn't play the archive automatically when you click the link you may be able to download
+  the file (if it didn't already) and open it in one of those player programs.</p>
+<p class="help">Happily, it's normally possible to configure
+  your computer so that the links play automatically. But, sadly, I don't have any advice on
+  how to do it.</p>
+</body>
+</html>
