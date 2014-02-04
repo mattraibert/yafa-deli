@@ -1,7 +1,7 @@
 require 'nokogiri'
 
-def sample
-  Nokogiri::HTML(File.read 'wzbc_sample.html')
+def archive(file = Net::HTTP.get(URI 'http://zbconline.com/'))
+  Nokogiri::HTML(file)
 end
 
 def episode_data
@@ -15,27 +15,42 @@ def episodes
 end
 
 def episode_rows
-  sample.css('#archivelinks tr').select {|tr| !tr.css('td.c3').empty? }
+  archive.css('#archivelinks tr').select {|tr| !tr.css('td.c3').empty? }
 end
 
 def rowspans
-  sample.css('td.c3[rowspan]').map {|x| x.attribute('rowspan').value.to_i }  
-end
-
-def test_episode_data
-  raise 'failed' unless rowspans == (episode_data.map {|e| e.count })
+  archive.css('td.c3[rowspan]').map {|x| x.attribute('rowspan').value.to_i }  
 end
 
 def assert_equal(a, b)
   unless a == b
     raise "#{a} != #{b}"
+  else
+    puts "Success!"
   end
+end
+
+def test_episode_data
+  assert_equal rowspans, (episode_data.map {|e| e.count })
 end
 
 def test_dirname
   e = Episode.new(nil)
   def e.title; 'f.o,o/& b-a\'r? (baz)'; end
   assert_equal(e.dirname, "f_o_o_and_b_a_r___baz_")
+end
+
+def ask(question)
+  print "#{question} "
+  gets =~ /y|Y/
+end
+
+def download_episodes?
+  episodes.each do |episode|
+    if ask "Download #{episode.title}?"
+      episode.dl!
+    end
+  end
 end
 
 class Episode
@@ -66,9 +81,10 @@ class Episode
     Dir.mkdir(dirname) unless Dir.exists? dirname
     Dir.chdir(dirname) do
       links.each do |link|
-        puts ?* * 16
-        puts `pwd`
-        puts "wget http://zbconline.com/#{link}"
+        #puts ?* * 16
+        #puts `pwd`
+        #puts "wget http://zbconline.com/#{link}"
+        puts `wget http://zbconline.com/#{link}`
       end
     end
   end
