@@ -1,5 +1,7 @@
 require 'nokogiri'
 
+BASEDIR = '/home/mattraibert/Music'
+
 def archive(file = Net::HTTP.get(URI 'http://zbconline.com/'))
   Nokogiri::HTML(file)
 end
@@ -36,8 +38,14 @@ end
 
 def test_dirname
   e = Episode.new(nil)
-  def e.title; 'f.o,o/& b-a\'r? (baz)'; end
-  assert_equal(e.dirname, "f_o_o_and_b_a_r___baz_")
+  def e.title; 'f.o,o/& B-A\'R 51? (baz)'; end
+  assert_equal(e.dirname, "f_o_o_and_b_a_r_51___baz_")
+end
+
+def test_episode_time
+  e = Episode.new(nil)
+  def e.links; ['wzbc-2014-04-06-20-50.mp3'] end #wzbc-%Y-%m-%d-%H-%M.mp3
+  assert_equal(e.time, "Sun 8:50PM") #%a %l:%M%p
 end
 
 def ask(question)
@@ -45,12 +53,8 @@ def ask(question)
   gets =~ /y|Y/
 end
 
-def download_episodes?
-  episodes.each do |episode|
-    if ask "Download #{episode.title}?"
-      episode.dl!
-    end
-  end
+def download_episodes?(episodes)
+  episodes.select {|episode| ask "Download #{episode.title} (#{episode.time})?" }
 end
 
 class Episode
@@ -73,19 +77,24 @@ class Episode
     end
   end
 
+  def time
+    Time.strptime(links.first, "wzbc-%Y-%m-%d-%H-%M.mp3").strftime("%a%l:%M%p")
+  end
+
   def dirname
-    title.downcase.gsub(/ |,|\.|-|\'|\/|\?|\(|\)/,'_').gsub('&', 'and')
+    title.downcase.gsub('&', 'and').gsub(/[^a-z0-9]/,'_')
+  end
+
+  def link2dl(link)
+    destfile = "#{BASEDIR}/#{link.sub(/wzbc/,dirname)}"
+    "wget http://zbconline.com/#{link} #{destfile}"
+  end
+
+  def dl
+    links.map {|link| link2dl(link) }
   end
 
   def dl!
-    Dir.mkdir(dirname) unless Dir.exists? dirname
-    Dir.chdir(dirname) do
-      links.each do |link|
-        #puts ?* * 16
-        #puts `pwd`
-        #puts "wget http://zbconline.com/#{link}"
-        puts `wget http://zbconline.com/#{link}`
-      end
-    end
+    `#{dl}`
   end
 end
